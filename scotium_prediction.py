@@ -1,5 +1,4 @@
 # pip install yellowbrick
-# pip install verstack
 # conda install lightgbm
 
 import numpy as np
@@ -10,8 +9,6 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import MinMaxScaler
 from yellowbrick.cluster import KElbowVisualizer
-from scipy.cluster.hierarchy import linkage
-from scipy.cluster.hierarchy import dendrogram
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from sklearn.model_selection import cross_val_score, GridSearchCV, cross_validate
@@ -24,7 +21,7 @@ from lightgbm import LGBMClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.exceptions import ConvergenceWarning
-from verstack import LGBMTuner
+
 
 warnings.simplefilter(action='ignore', category=FutureWarning)
 warnings.simplefilter("ignore", category=ConvergenceWarning)
